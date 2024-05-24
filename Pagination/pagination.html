@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Example</title>
+    <style>
+        .hidden { display: none; }
+        .pagination { 
+            display: flex; 
+            list-style: none; 
+            cursor: pointer;
+            /*background-color: #4CAF50;*/
+            /*float: right*/
+            width: 46%;
+            /*margin-left: 15%;*/
+             }
+        /*.pagination li { margin: 0 5px; }
+        .pagination li.active { font-weight: bold; }
+        .pagination a:hover:not(.active) {background-color: #ddd;}*/
+         .pagination li {  padding: 5px 10px; border: 1px solid #ccc; }
+        .pagination li.active { font-weight: bold; background-color: #007bff; color: white; }
+        .pagination li:hover { background-color: #007bff; }
+        .container {
+            background-color: #ddd;
+            width: 45%;
+            margin: 80px 10px 10px 231px;
+            padding: 5px 5px 9px 23px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="content"></div>
+    <ul id="pagination" class="pagination"></ul>
+</div>
+
+
+    <script src="pagination.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><!-- jQuery base library needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script> 
+</body>
+</html>
